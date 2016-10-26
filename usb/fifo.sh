@@ -51,7 +51,7 @@ arch-chroot /mnt locale-gen
 arch-chroot /mnt echo LANG=$lang.UTF-8 > /etc/locale.conf
 
 echo -e "\nTime"
-arch-chroot /mnt ln -s /usr/share/zoneinfo/Europe/Paris > /etc/localtime
+arch-chroot /mnt ln -s /usr/share/zoneinfo/Europe/Paris > /mnt/etc/localtime
 arch-chroot /mnt hwclock --systohc --utc
 
 echo -e "\nHostname"
