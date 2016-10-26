@@ -91,11 +91,7 @@ arch-chroot /mnt sed -i '/%wheel ALL=(ALL) ALL/s/^# //' /etc/sudoers
 arch-chroot /mnt sed -i '/%wheel ALL=(ALL) ALL/ a Defaults rootpw' /etc/sudoers
 
 echo -e "Mkinitcpio"
-echo -e "Write \"block\" before \"autodetect\" and remove the other \"block\""
-echo -e "It should end up like that : HOOKS=\"base udev block autodetect modconf filesystems keyboard fsck\""
-read -p "Press enter to continue"
-arch-chroot /mnt nano /etc/mkinitcpio.conf
-#sed -i '48s/autodetect modconf block filesystems/block autodetect modconf filesystems' /etc/mkinitcpio.conf
+sed -i '48s/autodetect modconf block filesystems/block autodetect modconf filesystems' /etc/mkinitcpio.conf
 arch-chroot /mnt mkinitcpio -p linux
 
 echo -e "\nGrub"
