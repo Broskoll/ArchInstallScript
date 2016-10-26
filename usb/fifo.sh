@@ -42,13 +42,13 @@ echo -e "\nBase package"
 pacstrap -i /mnt base base-devel
 
 echo -e "\nFstab"
-genfstab -U -p /mnt >> /mnt/etc/fstab
+genfstab -U -p /mnt >> /etc/fstab
 
 echo -e "\nLanguage"
 read -p "Enter the id of your country (Example : en_US, fr_FR, de_DE, ...) : " lang
 arch-chroot /mnt sed -i '/'\#$lang.UTF-8'/s/^#//' /etc/locale.gen
 arch-chroot /mnt locale-gen
-arch-chroot /mnt echo LANG=$lang.UTF-8 > /etc/locale.conf
+arch-chroot /mnt echo LANG=$lang.UTF-8 > /mnt/etc/locale.conf
 
 echo -e "\nTime"
 arch-chroot /mnt ln -s /usr/share/zoneinfo/Europe/Paris > /mnt/etc/localtime
