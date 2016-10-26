@@ -57,8 +57,8 @@ arch-chroot /mnt hwclock --systohc --utc
 echo -e "\nHostname"
 read -p "Enter a hostname : " hostnm
 arch-chroot /mnt echo $hostnm > /etc/hostname
-arch-chroot /mnt "sed -i '/127.0.0.1/s/$/ '${hostnm}'/' /etc/hosts"
-arch-chroot /mnt "sed -i '/::1/s/$/ '${hostnm}'/' /etc/hosts"
+arch-chroot /mnt sed -i '/127.0.0.1/s/$/ '${hostnm}'/' /etc/hosts
+arch-chroot /mnt sed -i '/::1/s/$/ '${hostnm}'/' /etc/hosts
 
 echo -e "\nPacman & Yaourt"
 arch-chroot /mnt sed -i '/'multilib\]'/s/^#//' /etc/pacman.conf
@@ -91,7 +91,7 @@ arch-chroot /mnt sed -i '/%wheel ALL=(ALL) ALL/s/^# //' /etc/sudoers
 arch-chroot /mnt sed -i '/%wheel ALL=(ALL) ALL/ a Defaults rootpw' /etc/sudoers
 
 echo -e "Mkinitcpio"
-arch-chroot /mnt sed -i '48s/autodetect modconf block/block autodetect modconf' /etc/mkinitcpio.conf
+arch-chroot /mnt sed -i '52s/autodetect modconf block/block autodetect modconf/' /etc/mkinitcpio.conf
 arch-chroot /mnt mkinitcpio -p linux
 
 echo -e "\nGrub"
