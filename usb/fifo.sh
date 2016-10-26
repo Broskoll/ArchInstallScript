@@ -56,16 +56,14 @@ arch-chroot /mnt hwclock --systohc --utc
 
 echo -e "\nHostname"
 read -p "Enter a hostname : " hostnm
-arch-chroot /mnt echo $hostnm > /etc/hostname
-arch-chroot /mnt sed -i '/127.0.0.1/s/$/ '${hostnm}'/' /etc/hosts
-arch-chroot /mnt sed -i '/::1/s/$/ '${hostnm}'/' /etc/hosts
+arch-chroot /mnt echo $hostnm > /mnt/etc/hostname
 
 echo -e "\nPacman & Yaourt"
 arch-chroot /mnt sed -i '/'multilib\]'/s/^#//' /etc/pacman.conf
 arch-chroot /mnt sed -i '/\[multilib\]/ a Include = /etc/pacman.d/mirrorlist' /etc/pacman.conf
-arch-chroot /mnt echo -e "[archlinuxfr]" >> /etc/pacman.conf
-arch-chroot /mnt echo -e "SigLevel = Never" >> /etc/pacman.conf
-arch-chroot /mnt echo -e "Server = http://repo.archlinux.fr/\$arch" >> /etc/pacman.conf
+arch-chroot /mnt echo -e "[archlinuxfr]" >> /mnt/etc/pacman.conf
+arch-chroot /mnt echo -e "SigLevel = Never" >> /mnt/etc/pacman.conf
+arch-chroot /mnt echo -e "Server = http://repo.archlinux.fr/\$arch" >> /mnt/etc/pacman.conf
 echo -e "Update \"Pacman\" \n"
 arch-chroot /mnt pacman -Sy
 echo -e "Install \"Yaourt\" \n"
@@ -105,10 +103,10 @@ fi
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
 uuid=`blkid -o value -s UUID /dev/$sd2` 
 arch-chroot /mnt echo -e "LABEL Arch" >> /boot/grub/menu.lst
-arch-chroot /mnt echo -e "    MENU LABEL Arch Linux" >> /boot/grub/menu.lst
-arch-chroot /mnt echo -e "    LINUX ../vmlinuz-linux" >> /boot/grub/menu.lst
-arch-chroot /mnt echo -e "    APPEND root=UUID=$uuid ro" >> /boot/grub/menu.lst
-arch-chroot /mnt echo -e "    INITRD ../initramfs-linux.img" >> /boot/grub/menu.lst
+arch-chroot /mnt echo -e "    MENU LABEL Arch Linux" >> /mnt/boot/grub/menu.lst
+arch-chroot /mnt echo -e "    LINUX ../vmlinuz-linux" >> /mnt/boot/grub/menu.lst
+arch-chroot /mnt echo -e "    APPEND root=UUID=$uuid ro" >> /mnt/boot/grub/menu.lst
+arch-chroot /mnt echo -e "    INITRD ../initramfs-linux.img" >> /mnt/boot/grub/menu.lst
 
 umount -R /mnt
 read -p "Press enter to reboot"
