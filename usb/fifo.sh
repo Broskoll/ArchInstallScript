@@ -57,6 +57,7 @@ arch-chroot /mnt hwclock --systohc --utc
 echo -e "\nHostname"
 read -p "Enter a hostname : " hostnm
 arch-chroot /mnt echo $hostnm > /mnt/etc/hostname
+arch-chroot /mnt echo "127.0.1.1	$hostnm.localdomain     $hostnm" >> /mnt/etc/hosts
 
 echo -e "\nPacman & Yaourt"
 arch-chroot /mnt sed -i '/'multilib\]'/s/^#//' /etc/pacman.conf
