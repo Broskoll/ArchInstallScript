@@ -4,6 +4,7 @@
 sudo apt-get update
 #sudo apt-get upgrade
 sudo passwd
+sudo adduser --disabled-login --gecos 'Gogs' git
 wget -O fifo2.sh goo.gl/WcDa8H
 wget -O siso.sh goo.gl/o5OEc7
 su root ~/fifo2.sh
