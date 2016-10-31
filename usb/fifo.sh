@@ -1,5 +1,5 @@
 #!/bin/bash
-#wget -O fifo.sh goo.gl/LaQnYp && bash fifo.sh
+#wget -O fifo.sh goo.gl/6cbk0V && bash fifo.sh
 
 echo -e "\nArch Linux on an usb key"
 
