@@ -10,6 +10,6 @@ echo -e "Pi passwd : "
 passwd pi
 echo -e "Git passwd : "
 sudo passwd git
-wget -O fifo2.sh goo.gl/WcDa8H
-wget -O siso.sh goo.gl/o5OEc7
+wget https://raw.githubusercontent.com/Broskoll/Setup/master/gogs/fifo2.sh
+wget https://raw.githubusercontent.com/Broskoll/Setup/master/gogs/siso.sh
 su root ~/fifo2.sh
