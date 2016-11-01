@@ -1,5 +1,5 @@
 #!/bin/bash
-#wget -O fifo.sh goo.gl/RO8Aj2 && bash fifo.sh
+#wget -O fifo.sh goo.gl/R4HqqD && bash fifo.sh
 
 sudo apt-get update
 sudo apt-get upgrade
