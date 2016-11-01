@@ -1,7 +1,7 @@
 #!/bin/bash
 
-wget https://dl.gogs.io/gogs_v0.9.71_raspi2.zip
-unzip gogs_v0.9.71_raspi2.zip
+wget https://dl.gogs.io/gogs_latest_raspi2.zip
+unzip gogs_latest_raspi2.zip
 sudo cp /home/git/gogs/scripts/systemd/gogs.service /etc/systemd/system/
 sudo systemctl enable gogs
 sudo systemctl start gogs
