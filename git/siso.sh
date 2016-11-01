@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mkdir /home/git/lifeup.git
+sudo mkdir /home/git/lifeup.git
 cd /home/git/lifeup.git
-git init --bare
+sudo git init --bare
