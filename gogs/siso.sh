@@ -1,6 +1,6 @@
 #!/bin/bash
 
 sudo apt-get install git
-wget -O tito.sh goo.gl/uNGDPk
+wget https://raw.githubusercontent.com/Broskoll/Setup/master/gogs/tito.sh
 sudo mv tito.sh /home/git/
 sudo su - git /home/git/tito.sh
