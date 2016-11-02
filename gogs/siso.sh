@@ -1,4 +1,4 @@
-sudo apt-get install git
+sudo apt-get install git -y
 wget https://dl.gogs.io/gogs_latest_raspi2.zip
 unzip gogs_latest_raspi2.zip
 sudo cp /home/git/gogs/scripts/systemd/gogs.service /etc/systemd/system/
