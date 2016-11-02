@@ -7,6 +7,6 @@ echo -e "Root passwd : "
 sudo passwd
 echo -e "Pi passwd : "
 passwd pi
+wget https://raw.githubusercontent.com/Broskoll/Setup/master/gogs/fifo2.sh
 wget https://raw.githubusercontent.com/Broskoll/Setup/master/gogs/siso.sh
-wget https://raw.githubusercontent.com/Broskoll/Setup/master/gogs/tito.sh
-su root ~/siso.sh
+su root ~/fifo2.sh
