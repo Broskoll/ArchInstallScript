@@ -2,7 +2,7 @@
 #wget -O fifo.sh goo.gl/RO8Aj2 && bash fifo.sh
 
 sudo apt-get update
-#sudo apt-get upgrade
+sudo apt-get upgrade -y
 echo -e "Root passwd : "
 sudo passwd
 echo -e "Pi passwd : "
