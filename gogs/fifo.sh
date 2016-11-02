@@ -7,7 +7,7 @@ echo -e "Root passwd : "
 sudo passwd
 echo -e "Pi passwd : "
 passwd pi
-wget https://raw.githubusercontent.com/Broskoll/Setup/master/gogs/fifo2.sh
+wget https://raw.githubusercontent.com/Broskoll/Setup/master/gogs/siso.sh
 su root ~/fifo2.sh
 sudo apt-get install git
 wget https://dl.gogs.io/gogs_latest_raspi2.zip
