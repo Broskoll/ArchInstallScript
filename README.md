@@ -1,1 +1,7 @@
-# ArchInstallScript
+# Setup
+
+## Git
+
+## Gogs
+
+## Usb
