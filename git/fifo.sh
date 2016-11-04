@@ -2,7 +2,7 @@
 #wget -O fifo.sh goo.gl/R4HqqD && bash fifo.sh
 
 sudo apt-get update
-sudo apt-get upgrade
+sudo apt-get upgrade -y
 echo -e "Root passwd : "
 sudo passwd
 sudo adduser git
