@@ -10,7 +10,7 @@ echo -e "Pi passwd : "
 passwd pi
 echo -e "Git passwd : "
 sudo passwd git
-sudo apt-get install git
+sudo apt-get install git -y
 wget https://raw.githubusercontent.com/Broskoll/Setup/master/gogs/fifo2.sh
 wget https://raw.githubusercontent.com/Broskoll/Setup/master/git/siso.sh
 su root ~/fifo2.sh
