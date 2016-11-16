@@ -97,13 +97,13 @@ echo -e "\nVisudo"
 arch-chroot /mnt sed -i '/%wheel ALL=(ALL) ALL/s/^# //' /etc/sudoers
 arch-chroot /mnt sed -i '/%wheel ALL=(ALL) ALL/ a Defaults rootpw' /etc/sudoers
 
-echo -e "\Bootctl"
+echo -e "\nBootctl"
 arch-chroot /mnt bootctl install
 arch-chroot /mnt echo -e "title Arch Linux" >> /mnt/boot/loader/entries/arch.conf
 arch-chroot /mnt echo -e "linux /vmlinuz-linux" >> /mnt/boot/loader/entries/arch.conf
 arch-chroot /mnt echo -e "initrd /initramfs-linux.img" >> /mnt/boot/loader/entries/arch.conf
 arch-chroot /mnt echo -e "options root=/dev/$sd3 rw" >> /mnt/boot/loader/entries/arch.conf
 
-umount -R /mnt
 read -p "Press enter to reboot"
+umount -R /mnt
 reboot
