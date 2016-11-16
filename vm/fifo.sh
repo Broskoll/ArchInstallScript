@@ -15,7 +15,7 @@ echo -e "Press "Enter" at new partition > 512MiB > EF00 > \"Linux Boot\""
 echo -e "#Press "Enter" at new partition > 4GiB > 8200 > \"Linux Swap\""
 echo -e "#Press "Enter" at new partition > Enter > Enter > \"Arch Linux\""
 read -p "Press enter to continue"
-cfdisk /dev/$sd
+cgdisk /dev/$sd
 
 echo -e "\nFormat"
 lsblk
