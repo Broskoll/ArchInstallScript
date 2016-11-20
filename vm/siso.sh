@@ -1,6 +1,6 @@
 echo -e "Ethernet"
 ip link
-read -p "Enter the name of your interested path (Example : sda) : " sd
+read -p "Enter the ethernet name : " eth
 sudo systemctl enable dhcpcd@${eth}.service
 sudo systemctl start dhcpcd@${eth}.service
 
@@ -8,6 +8,7 @@ echo -e "Update/Upgrade"
 sudo pacman -Syu
 
 echo -e "Install packages"
+echo -e "Pacman"
 sudo pacman -S \
 xf86-video-intel mesa \
 xorg-server xorg-server-utils xorg-xinit \
@@ -32,46 +33,45 @@ openssh \
 rsync \
 ntfs-3g \
 unclutter \
-w3m
+w3m \
+bropages \
+xsel \
+qutebrowser \
+ruby \
+zsh \
+zsh-completions
+echo -e "Yaourt"
 yaourt -S phallus-fonts-git \
 bdf-creep \
 concalc \
 lemonbar-git \
 dmenu2 \
-hsetroot
+hsetroot \
+arch-wiki-man \
+wiki \
+searx \
+nodejs-how2 \
+hget-git \
+nodejs-tldr \
+micro \
+min-browser-bin \
+kpcli \
+megatools \
+subliminal-git \
+termfeed-git \
+buku \
+rtv \
+khal \
+oh-my-zsh-git
+echo -e "Npm"
+npm install -g magnet-cli \
+tvcl \
+rdcli
+echo -e "Gem"
+gem install tod-gem
 #Terminal xst
 #yaourt -S xst-git
 
 echo -e "Enable Ssh"
 sudo systemctl enable sshd.service
 sudo systemctl start sshd.service
-
-#Vim setup
-#Vim-plug
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-cd .config
-mkdir nvim
-cd nvim
-touch init.vim
-nano init.vim 
-#Add this at the end of the file
-    runtime! archlinux.vim
-
-    set number
-    filetype plugin on
-    syntax on
-
-    call plug#begin()
-    Plug 'junegunn/goyo.vim'
-    Plug 'junegunn/limelight.vim'
-    call plug#end()
-#Inside nvim
-:PlugInstall
-
-#Login manager
-sudo systemctl enable slim.service
-sudo nano /etc/slim.conf
-cd /usr/share/slim/themes/
-sudo git clone https://github.com/naglis/slim-minimal.git
-
-
