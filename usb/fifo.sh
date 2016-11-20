@@ -109,6 +109,6 @@ arch-chroot /mnt echo -e "    LINUX ../vmlinuz-linux" >> /mnt/boot/grub/menu.lst
 arch-chroot /mnt echo -e "    APPEND root=UUID=$uuid ro" >> /mnt/boot/grub/menu.lst
 arch-chroot /mnt echo -e "    INITRD ../initramfs-linux.img" >> /mnt/boot/grub/menu.lst
 
-umount -R /mnt
 read -p "Press enter to reboot"
+umount -R /mnt
 reboot
