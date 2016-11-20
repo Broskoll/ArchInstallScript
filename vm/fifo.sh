@@ -82,6 +82,8 @@ echo -e "Install \"Bash-completion\" \n"
 arch-chroot /mnt pacman -S bash-completion
 echo -e "Install \"Iw\", \"Wpa_supplicant\" and \"Dialog\" \n"
 arch-chroot /mnt pacman -S iw wpa_supplicant dialog
+echo -e "Install \"\"Intel miceocode \n"
+arch-chroot /mnt pacman -S intel-ucode
 
 echo -e "\nUsers"
 echo -e "Set root's password"
@@ -102,6 +104,7 @@ echo -e "\nBootctl"
 arch-chroot /mnt bootctl install
 arch-chroot /mnt echo -e "title Arch Linux" >> /mnt/boot/loader/entries/arch.conf
 arch-chroot /mnt echo -e "linux /vmlinuz-linux" >> /mnt/boot/loader/entries/arch.conf
+arch-chroot /mnt echo -e "initrd /intel-ucode.img" >> /mnt/boot/loader/entries/arch.conf
 arch-chroot /mnt echo -e "initrd /initramfs-linux.img" >> /mnt/boot/loader/entries/arch.conf
 arch-chroot /mnt echo -e "options root=/dev/$sd3 rw" >> /mnt/boot/loader/entries/arch.conf
 
