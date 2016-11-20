@@ -82,7 +82,7 @@ echo -e "Install \"Bash-completion\" \n"
 arch-chroot /mnt pacman -S bash-completion
 echo -e "Install \"Iw\", \"Wpa_supplicant\" and \"Dialog\" \n"
 arch-chroot /mnt pacman -S iw wpa_supplicant dialog
-echo -e "Install \"\"Intel miceocode \n"
+echo -e "Install \"\"Intel microcode \n"
 arch-chroot /mnt pacman -S intel-ucode
 
 echo -e "\nUsers"
