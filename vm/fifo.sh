@@ -1,7 +1,7 @@
 #!/bin/bash
 #wget -O fifo.sh goo.gl/dY5yYf && bash fifo.sh
 
-echo -e "\nArch Linux on an usb key"
+echo -e "\nArch Linux a VM"
 
 echo -e "\nDevices"
 lsblk
