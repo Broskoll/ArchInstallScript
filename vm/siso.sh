@@ -1,13 +1,13 @@
-echo -e "Ethernet"
+echo -e "\n Ethernet"
 ip link
 read -p "Enter the ethernet name : " eth
 sudo systemctl enable dhcpcd@${eth}.service
 sudo systemctl start dhcpcd@${eth}.service
 
-echo -e "Update/Upgrade"
+echo -e "\n Update/Upgrade"
 sudo pacman -Syu
 
-echo -e "Install packages"
+echo -e "\n Install packages"
 echo -e "Pacman"
 sudo pacman -S \
 xf86-video-intel mesa \
@@ -72,6 +72,6 @@ gem install tod-gem
 #Terminal xst
 #yaourt -S xst-git
 
-echo -e "Enable Ssh"
+echo -e "\n Enable Ssh"
 sudo systemctl enable sshd.service
 sudo systemctl start sshd.service
