@@ -9,7 +9,7 @@ sudo pacman -Syu
 
 echo -e "\n Install packages"
 echo -e "Pacman"
-sudo pacman -S \
+sudo pacman -S `#comment` \
 xf86-video-intel mesa \
 xorg-server xorg-server-utils xorg-xinit \
 termite \
