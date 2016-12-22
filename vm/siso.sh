@@ -12,6 +12,7 @@ echo -e "Pacman"
 sudo pacman -S `#comment` \
 xf86-video-intel mesa \
 xorg-server xorg-server-utils xorg-xinit \
+linux-zen \
 termite \
 sxhkd \
 neovim \
