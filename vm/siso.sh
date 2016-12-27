@@ -51,6 +51,7 @@ hsetroot \
 arch-wiki-man \
 wiki \
 searx \
+zeronet \
 nodejs-how2 \
 hget-git \
 nodejs-tldr \
@@ -73,6 +74,9 @@ gem install tod-gem
 #Terminal xst
 #yaourt -S xst-git
 
-echo -e "\n Enable Ssh"
+echo -e "\n Enabling Ssh"
 sudo systemctl enable sshd.service
 sudo systemctl start sshd.service
+
+echo -e "\n Enabling Zeronet
+systemctl enable zeronet
