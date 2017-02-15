@@ -68,4 +68,4 @@ sudo systemctl enable sshd.service
 sudo systemctl start sshd.service
 
 echo -e "\n Enabling Zeronet
-systemctl enable zeronet
+sudo systemctl enable zeronet
