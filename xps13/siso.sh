@@ -35,7 +35,6 @@ openssh \
 rsync \
 ntfs-3g \
 unclutter \
-bropages \
 xsel `#Copy` \
 ruby \
 zsh \
@@ -54,6 +53,7 @@ hget-git `#Better wget` \
 kpcli `#Keepass` \
 subliminal-git `#Subtitles`\
 rtv \
+ruby-bropages \
 oh-my-zsh-git
 
 echo -e "Npm"
