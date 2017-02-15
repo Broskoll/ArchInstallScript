@@ -1,5 +1,5 @@
 #!/bin/bash
-#wget -O fifo.sh goo.gl/dY5yYf && bash fifo.sh
+#wget -O fifo.sh goo.gl/jc50dL && bash fifo.sh
 
 echo -e "\nArch Linux a VM"
 
