@@ -1,11 +1,11 @@
 #!/bin/bash
 #wget -O siso.sh goo.gl/bI4WaB && bash siso.sh
 
-echo -e "\n Ethernet"
-ip link
-read -p "Enter the ethernet name : " eth
-sudo systemctl enable dhcpcd@${eth}.service
-sudo systemctl start dhcpcd@${eth}.service
+#echo -e "\n Ethernet"
+#ip link
+#read -p "Enter the ethernet name : " eth
+#sudo systemctl enable dhcpcd@${eth}.service
+#sudo systemctl start dhcpcd@${eth}.service
 
 echo -e "\n Update/Upgrade"
 sudo pacman -Syu
