@@ -38,6 +38,7 @@ ntfs-3g \
 unclutter \
 xsel `#Copy` \
 ruby \
+npm \
 zsh \
 zsh-completions
 
@@ -59,7 +60,7 @@ ruby-bropages \
 oh-my-zsh-git
 
 echo -e "Npm"
-npm install -g magnet-cli \
+sudo npm install -g magnet-cli \
 rdcli
 
 echo -e "\n Enabling Ssh"
