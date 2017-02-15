@@ -51,7 +51,7 @@ dmenu2 \
 hsetroot \
 searx \
 zeronet \
-hget-git `#Better wget` \
+#hget-git `#Better wget` \
 kpcli `#Keepass` \
 subliminal-git `#Subtitles`\
 rtv \
