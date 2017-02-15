@@ -1,3 +1,6 @@
+#!/bin/bash
+#wget -O siso.sh goo.gl/ && bash siso.sh
+
 echo -e "\n Ethernet"
 ip link
 read -p "Enter the ethernet name : " eth
