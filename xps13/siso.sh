@@ -43,6 +43,7 @@ zsh-completions
 
 echo -e "Yaourt"
 yaourt -S \
+i3-gaps-git \
 broadcom-wl \
 concalc \
 lemonbar-git \
