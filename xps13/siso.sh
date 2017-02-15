@@ -7,6 +7,8 @@
 #sudo systemctl enable dhcpcd@${eth}.service
 #sudo systemctl start dhcpcd@${eth}.service
 
+sudo pacman -S wget
+
 echo -e "\n Update/Upgrade"
 sudo pacman -Syu
 
@@ -24,7 +26,6 @@ python python2 python-pip python2-pip \
 android-tools \
 mpv \
 ranger \
-wget \
 feh \
 zip unzip \
 redshift \
