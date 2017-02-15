@@ -1,6 +1,5 @@
 #!/bin/bash
 #wget -O fifo.sh goo.gl/dY5yYf && bash fifo.sh
-#Don't forget to put the vm in efi mode
 
 echo -e "\nArch Linux a VM"
 
