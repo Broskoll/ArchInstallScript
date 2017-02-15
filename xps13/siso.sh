@@ -1,5 +1,5 @@
 #!/bin/bash
-#wget -O siso.sh goo.gl/ && bash siso.sh
+#wget -O siso.sh goo.gl/bI4WaB && bash siso.sh
 
 echo -e "\n Ethernet"
 ip link
@@ -40,7 +40,10 @@ xsel `#Copy` \
 ruby \
 zsh \
 zsh-completions
+
 echo -e "Yaourt"
+yaourt -S \
+broadcom-wl \
 concalc \
 lemonbar-git \
 dmenu2 \
