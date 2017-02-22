@@ -81,8 +81,11 @@ echo -e "Install \"Bash-completion\" \n"
 arch-chroot /mnt pacman -S bash-completion
 echo -e "Install \"Iw\", \"Wpa_supplicant\" and \"Dialog\" \n"
 arch-chroot /mnt pacman -S iw wpa_supplicant dialog
-echo -e "Install \"\"Intel microcode \n"
+echo -e "Install \"Intel microcode\" \n"
 arch-chroot /mnt pacman -S intel-ucode
+echo -e "Install \"Terminus font\" \n"
+arch-chroot /mnt pacman -S terminus-font
+arch-chroot /mnt echo -e "FONT=ter-128b" > /mnt/etc/vconsole.conf
 
 echo -e "\nUsers"
 echo -e "Set root's password"
