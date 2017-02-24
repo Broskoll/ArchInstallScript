@@ -17,7 +17,7 @@ echo -e "Pacman"
 sudo pacman -S `#comment` \
 xf86-video-intel mesa \
 xorg-server xorg-server-utils xorg-xinit \
-linux-zen `#Kernel` \
+linux-zen linux-zen-headers `#Kernel` \
 termite \
 neovim \
 alsa-utils \
@@ -45,7 +45,7 @@ zsh-completions
 echo -e "Yaourt"
 yaourt -S \
 i3-gaps-git \
-broadcom-wl \
+broadcom-wl-dkms \
 concalc \
 lemonbar-git \
 dmenu2 \
