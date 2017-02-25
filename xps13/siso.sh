@@ -1,13 +1,9 @@
 #!/bin/bash
 #wget -O siso.sh goo.gl/bI4WaB && bash siso.sh
 
-#echo -e "\n Ethernet"
-#ip link
-#read -p "Enter the ethernet name : " eth
-#sudo systemctl enable dhcpcd@${eth}.service
-#sudo systemctl start dhcpcd@${eth}.service
-
-sudo pacman -S wget
+sudo wifi-menu
+sudo netctl enable wlp2s0-MagicWifi
+sudo netctl start wlp2s0-MagicWifi
 
 echo -e "\n Update/Upgrade"
 sudo pacman -Syu
@@ -20,6 +16,7 @@ xorg-server xorg-server-utils xorg-xinit \
 linux-zen linux-zen-headers `#Kernel` \
 termite \
 neovim \
+firefox \
 alsa-utils \
 udiskie \
 python python2 python-pip python2-pip \
