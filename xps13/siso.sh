@@ -76,6 +76,8 @@ sudo echo "	Option	"Tapping"	"on"" >> /etc/X11/xorg.conf.d/50-libinput.conf
 sudo echo "	Option	"AccelSpeed"	"1"" >> /etc/X11/xorg.conf.d/50-libinput.conf
 sudo echo "EndSection" >> /etc/X11/xorg.conf.d/50-libinput.conf
 
+sudo echo "options snd_hda_intel index=1,0" >> /etc/modprobe.d/alsa-base.conf
+
 
 
 
