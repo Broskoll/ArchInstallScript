@@ -37,6 +37,7 @@ unclutter \
 xsel `#Copy` \
 ruby \
 npm \
+powerstat-git \
 zsh \
 zsh-completions
 
