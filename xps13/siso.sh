@@ -14,6 +14,7 @@ sudo pacman -S `#comment` \
 xf86-video-intel mesa \
 xorg-server xorg-server-utils xorg-xinit \
 linux-zen linux-zen-headers `#Kernel` \
+xf86-input-synaptics xf86-input-libinput \
 termite \
 neovim \
 firefox \
