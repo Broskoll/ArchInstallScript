@@ -55,12 +55,12 @@ zeronet \
 kpcli `#Keepass` \
 #Doesn't work: subliminal-git `#Subtitles`\
 rtv \
-ruby-bropages \
-oh-my-zsh-git
+oh-my-zsh-git \
+rdcli
 
 echo -e "Npm"
-sudo npm install -g magnet-cli \
-rdcli
+sudo npm install -g minimist request cheerio \
+
 
 echo -e "\n Enabling Ssh"
 sudo systemctl enable sshd.service
