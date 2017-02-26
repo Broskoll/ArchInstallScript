@@ -57,6 +57,7 @@ zeronet \
 kpcli `#Keepass` \
 addic7ed-cli `#Subtitles`\
 rtv \
+playmouth \
 oh-my-zsh-git \
 rdcli
 
