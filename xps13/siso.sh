@@ -81,6 +81,10 @@ sudo echo "EndSection" >> /etc/X11/xorg.conf.d/50-libinput.conf
 
 sudo echo "options snd_hda_intel index=1,0" >> /etc/modprobe.d/alsa-base.conf
 
+#Kernel
+#Change "linux /vmlinuz-linux" to linux "/vmlinuz-linux-zen" 
+#and "options ..." add "pcie_aspm=force quiet splash" before rw
+
 #TO USE
 convert -size 3200x1800 xc:#121212 wall.png
 convert wall.png -gravity Center -fill gray85 -font Inconsolata -annotate 0 "Hi" welcome.png
