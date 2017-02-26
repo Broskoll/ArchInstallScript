@@ -20,6 +20,7 @@ neovim \
 firefox \
 alsa-utils \
 udiskie \
+i3lock \
 python python2 python-pip python2-pip \
 android-tools \
 mpv \
