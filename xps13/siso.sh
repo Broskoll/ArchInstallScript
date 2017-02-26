@@ -58,9 +58,8 @@ rtv \
 oh-my-zsh-git \
 rdcli
 
-echo -e "Npm"
-sudo npm install -g minimist request cheerio \
-
+#echo -e "Npm"
+#sudo npm install -g minimist request cheerio \
 
 echo -e "\n Enabling Ssh"
 sudo systemctl enable sshd.service
@@ -69,20 +68,12 @@ sudo systemctl start sshd.service
 echo -e "\n Enabling Zeronet
 sudo systemctl enable zeronet
 
-sudo echo "Section "InputClass"" >> /etc/X11/xorg.conf.d/50-libinput.conf
-sudo echo "	Identifier "touchpad"" >> /etc/X11/xorg.conf.d/50-libinput.conf
-sudo echo "	MatchProduct "DLL0665:01 06CB:76AD Touchpad"" >> /etc/X11/xorg.conf.d/50-libinput.conf
-sudo echo "	Driver "libinput"" >> /etc/X11/xorg.conf.d/50-libinput.conf
-sudo echo "	Option	"Tapping"	"on"" >> /etc/X11/xorg.conf.d/50-libinput.conf
-sudo echo "	Option	"AccelSpeed"	"1"" >> /etc/X11/xorg.conf.d/50-libinput.conf
+sudo echo "Section \"InputClass\"" >> /etc/X11/xorg.conf.d/50-libinput.conf
+sudo echo "	Identifier \"touchpad\"" >> /etc/X11/xorg.conf.d/50-libinput.conf
+sudo echo "	MatchProduct \"DLL0665:01 06CB:76AD Touchpad\"" >> /etc/X11/xorg.conf.d/50-libinput.conf
+sudo echo "	Driver \"libinput\"" >> /etc/X11/xorg.conf.d/50-libinput.conf
+sudo echo "	Option	\"Tapping\"	\"on\"" >> /etc/X11/xorg.conf.d/50-libinput.conf
+sudo echo "	Option	\"AccelSpeed"	\"1\"" >> /etc/X11/xorg.conf.d/50-libinput.conf
 sudo echo "EndSection" >> /etc/X11/xorg.conf.d/50-libinput.conf
 
 sudo echo "options snd_hda_intel index=1,0" >> /etc/modprobe.d/alsa-base.conf
-
-
-
-
-
-
-
-
