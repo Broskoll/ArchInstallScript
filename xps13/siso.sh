@@ -57,7 +57,7 @@ zeronet \
 kpcli `#Keepass` \
 addic7ed-cli `#Subtitles`\
 rtv \
-playmouth \
+plymouth \
 oh-my-zsh-git \
 rdcli
 
@@ -85,3 +85,8 @@ sudo echo "options snd_hda_intel index=1,0" >> /etc/modprobe.d/alsa-base.conf
 convert -size 3200x1800 xc:#121212 wall.png
 convert wall.png -gravity Center -fill gray85 -font Inconsolata -annotate 0 "Hi" welcome.png
 #Get colors: https://www.imagemagick.org/script/color.php
+
+#TO DO
+#Plymouth
+#EDIT : /etc/mkinitcpio.conf
+#HOOKS="base udev plymouth [...] "
