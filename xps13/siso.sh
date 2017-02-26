@@ -53,7 +53,7 @@ searx \
 zeronet \
 #hget-git `#Better wget` \
 kpcli `#Keepass` \
-#Doesn't work: subliminal-git `#Subtitles`\
+addic7ed-cli `#Subtitles`\
 rtv \
 oh-my-zsh-git \
 rdcli
