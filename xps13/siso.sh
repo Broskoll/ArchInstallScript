@@ -38,6 +38,7 @@ xsel `#Copy` \
 ruby \
 npm \
 powertop \
+tlp \
 zsh \
 zsh-completions
 
