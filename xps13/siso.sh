@@ -30,6 +30,7 @@ feh `#Image viewer` \
 zip unzip unrar \
 redshift \
 htop \
+xautolock \
 slim \
 scrot \
 openssh \
