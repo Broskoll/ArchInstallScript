@@ -99,4 +99,4 @@ sudo rm /usr/share/plymouth/themes/spinner/thro*
 sudo cp thehiwallpaper.png /usr/share/plymouth/themes/spinner/animation-0001.png
 sudo echo -e "[Daemon]" > /etc/plymouth/plymouthd.conf
 sudo echo -e "Theme=spinner" >> /etc/plymouth/plymouthd.conf 
-sudo echo -e "ShowDelay=0" >> /etc/plymouth/plymouthd.conf
+sudo echo -e "ShowDelay=1" >> /etc/plymouth/plymouthd.conf
