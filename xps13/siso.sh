@@ -27,7 +27,7 @@ mpv \
 ranger \
 slim archlinux-themes-slim \
 feh `#Image viewer` \
-zip unzip \
+zip unzip unrar \
 redshift \
 htop \
 slim \
