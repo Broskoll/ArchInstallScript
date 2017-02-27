@@ -91,16 +91,29 @@ convert -size 3200x1800 xc:#121212 wall.png
 convert wall.png -gravity Center -fill gray85 -font Inconsolata -pointsize 128 -annotate 0 "Hi" welcome.png
 #Get colors: https://www.imagemagick.org/script/color.php
 
-#TO DO
 #Plymouth
 #EDIT : /etc/mkinitcpio.conf
 #HOOKS="base udev plymouth [...] "
 sudo rm /usr/share/plymouth/themes/spinner/anim*
 sudo rm /usr/share/plymouth/themes/spinner/thro*
-sudo cp thehiwallpaper.png /usr/share/plymouth/themes/spinner/animation-0001.png
+sudo cp thehiwallpaper.png /usr/share/plymouth/themes/spinner/wallpaper.png #TODO
 sudo echo -e "[Daemon]" > /etc/plymouth/plymouthd.conf
 sudo echo -e "Theme=spinner" >> /etc/plymouth/plymouthd.conf 
 sudo echo -e "ShowDelay=1" >> /etc/plymouth/plymouthd.conf
+sudo echo -e "[Plymouth Theme]" > /usr/share/plymouth/themes/spinner/spinner.plymouth
+sudo echo -e "Name=Spinner" >> /usr/share/plymouth/themes/spinner/spinner.plymouth
+sudo echo -e "Description=A simple custom theme." >> /usr/share/plymouth/themes/spinner/spinner.plymouth
+sudo echo -e "ModuleName=two-step" >> /usr/share/plymouth/themes/spinner/spinner.plymouth
+sudo echo -e "" >> /usr/share/plymouth/themes/spinner/spinner.plymouth
+sudo echo -e "[two-step]" >> /usr/share/plymouth/themes/spinner/spinner.plymouth
+sudo echo -e "ImageDir=/usr/share/plymouth/themes/spinner" >> /usr/share/plymouth/themes/spinner/spinner.plymouth
+sudo echo -e "ScriptFile=/usr/share/plymouth/themes/spinner/spinner.script" >> /usr/share/plymouth/themes/spinner/spinner.plymouth
+sudo echo -e "wallpaper_image = Image(\"wallpaper.png\");" > /usr/share/plymouth/themes/spinner/spinner.script
+sudo echo -e "screen_width = Window.GetWidth();" >> /usr/share/plymouth/themes/spinner/spinner.script
+sudo echo -e "screen_height = Window.GetHeight();" >> /usr/share/plymouth/themes/spinner/spinner.script
+sudo echo -e "resized_wallpaper_image = wallpaper_image.Scale(screen_width,screen_height);" >> /usr/share/plymouth/themes/spinner/spinner.script
+sudo echo -e "wallpaper_sprite = Sprite(resized_wallpaper_image);" >> /usr/share/plymouth/themes/spinner/spinner.script
+sudo echo -e "wallpaper_sprite.SetZ(-100);" >> /usr/share/plymouth/themes/spinner/spinner.script
 
 #Slim
 #take the config /etc/slim.conf
