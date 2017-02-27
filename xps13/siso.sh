@@ -25,7 +25,8 @@ python python2 python-pip python2-pip \
 android-tools \
 mpv \
 ranger \
-feh \
+slim archlinux-themes-slim \
+feh `#Image viewer` \
 zip unzip \
 redshift \
 htop \
