@@ -117,4 +117,5 @@ sudo echo -e "wallpaper_sprite.SetZ(-100);" >> /usr/share/plymouth/themes/spinne
 
 #Slim
 #take the config /etc/slim.conf
-sudo systemctl enable slim-plymouth.service
+sudo systemctl enable slim.service
+sudo convert -size 1x1 xc:#121212 background.jpg
