@@ -101,3 +101,7 @@ sudo cp thehiwallpaper.png /usr/share/plymouth/themes/spinner/animation-0001.png
 sudo echo -e "[Daemon]" > /etc/plymouth/plymouthd.conf
 sudo echo -e "Theme=spinner" >> /etc/plymouth/plymouthd.conf 
 sudo echo -e "ShowDelay=1" >> /etc/plymouth/plymouthd.conf
+
+#Slim
+#take the config /etc/slim.conf
+sudo systemctl enable slim-plymouth.service
