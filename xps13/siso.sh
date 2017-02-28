@@ -43,6 +43,7 @@ ruby \
 npm \
 powertop acpi \
 tlp \
+rofi \
 zsh \
 zsh-completions
 
@@ -52,7 +53,6 @@ i3-gaps-git \
 broadcom-wl-dkms \
 concalc \
 lemonbar-git \
-dmenu2 \
 hsetroot \
 searx \
 zeronet \
