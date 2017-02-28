@@ -19,6 +19,7 @@ termite \
 neovim \
 firefox \
 alsa-utils \
+dunst \
 udiskie \
 i3lock \
 python python2 python-pip python2-pip \
