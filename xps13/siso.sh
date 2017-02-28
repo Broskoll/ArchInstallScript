@@ -111,8 +111,8 @@ sudo echo -e "screen_height = Window.GetHeight();" >> /usr/share/plymouth/themes
 sudo echo -e "resized_wallpaper_image = wallpaper_image.Scale(screen_width,screen_height);" >> /usr/share/plymouth/themes/spinner/spinner.script
 sudo echo -e "wallpaper_sprite = Sprite(resized_wallpaper_image);" >> /usr/share/plymouth/themes/spinner/spinner.script
 sudo echo -e "wallpaper_sprite.SetZ(-100);" >> /usr/share/plymouth/themes/spinner/spinner.script
-sudo convert -size 3200x1800 xc:#black /usr/share/plymouth/themes/spinner/wall.png
-sudo convert wall.png -gravity Center -fill white -font Inconsolata -pointsize 128 -annotate 0 "Hi" /usr/share/plymouth/themes/spinner/welcome.png
+sudo convert -size 3200x1800 xc:black /usr/share/plymouth/themes/spinner/wall.png
+sudo convert /usr/share/plymouth/themes/spinner/wall.png -gravity Center -fill white -font Inconsolata -pointsize 128 -annotate 0 "Hi" /usr/share/plymouth/themes/spinner/wallpaper.png
 
 #Slim
 #take the config /etc/slim.conf
