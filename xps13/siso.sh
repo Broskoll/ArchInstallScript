@@ -40,7 +40,7 @@ unclutter \
 xsel `#Copy` \
 ruby \
 npm \
-powertop \
+powertop acpi \
 tlp \
 zsh \
 zsh-completions
