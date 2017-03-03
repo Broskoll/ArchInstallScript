@@ -114,7 +114,12 @@ sudo convert -size 3200x1800 xc:black /usr/share/plymouth/themes/spinner/wall.pn
 sudo convert /usr/share/plymouth/themes/spinner/wall.png -gravity Center -fill white -font Inconsolata -pointsize 128 -annotate 0 "Hi" /usr/share/plymouth/themes/spinner/wallpaper.png
 sudo cp /usr/share/plymouth/themes/spinner/wallpaper.png /usr/share/plymouth/themes/spinner/background-tile.png
 sudo cp /usr/share/plymouth/themes/spinner/wallpaper.png /usr/share/plymouth/themes/spinner/animation-0001.png
+
 #Slim
 #take the config /etc/slim.conf
 sudo systemctl enable slim.service
 #take the minimal folder
+
+#Sound
+sudo echo "options snd_hda_intel index=1,0" > /etc/modprobe.d/alsa-base.conf
+amixer -c 1 set SPO on
