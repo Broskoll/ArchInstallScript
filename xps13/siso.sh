@@ -52,7 +52,7 @@ yaourt -S \
 i3-gaps-git \
 broadcom-wl-dkms \
 concalc \
-lemonbar-git \
+lemonbar-xft-git \
 hsetroot \
 searx \
 zeronet \
