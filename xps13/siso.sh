@@ -21,24 +21,22 @@ firefox \
 alsa-utils \
 dunst \
 udiskie \
-i3lock \
-python python2 python-pip python2-pip \
-android-tools \
-mpv \
-ranger \
-slim archlinux-themes-slim \
+i3lock `#Lockscreen` \
+python python2 python-pip python2-pip `#Python` \
+android-tools `#ADB` \
+mpv `#VLC` \
+ranger `#File manager` \
+slim archlinux-themes-slim `#Login` \
 feh `#Image viewer` \
-zip unzip unrar \
-redshift \
-htop \
-xautolock \
-slim \
-scrot \
-openssh \
-rsync \
+zip unzip unrar `#Compression` \
+redshift `#Flux` \
+htop `#Sys info` \
+xautolock `#Autolock` \
+scrot `#Screenshots` \
+openssh `#SSH` \
+rsync `#Sync files` \
 ntfs-3g \
-unclutter \
-xdo `#Lemonbar indp` \
+unclutter `#Hide the mouse` \
 xsel `#Copy` \
 ruby \
 npm \
