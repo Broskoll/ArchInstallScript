@@ -38,6 +38,7 @@ openssh \
 rsync \
 ntfs-3g \
 unclutter \
+xdo `#Lemonbar indp` \
 xsel `#Copy` \
 ruby \
 npm \
