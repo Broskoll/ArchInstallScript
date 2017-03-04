@@ -35,6 +35,7 @@ xautolock `#Autolock` \
 scrot `#Screenshots` \
 openssh `#SSH` \
 rsync `#Sync files` \
+exfat-utils `#Mount exfat`
 ntfs-3g \
 unclutter `#Hide the mouse` \
 xsel `#Copy` \
