@@ -124,3 +124,8 @@ sudo systemctl enable slim.service
 #Sound
 sudo echo "options snd_hda_intel index=1,0" > /etc/modprobe.d/alsa-base.conf
 amixer -c 1 set SPO on
+/etc/asound.conf #add this :
+#pcm.dsp {
+#    type plug
+#    slave.pcm "dmix"
+#}
