@@ -51,7 +51,7 @@ broadcom-wl-dkms `#Wifi` \
 concalc `#CLI calculator` \
 lemonbar-xft-git `#Bar` \
 hsetroot `#Wallpaper` \
-mopidy mopidy-spotify ncmpcpp `#Spotify`
+mopidy mopidy-spotify ncmpcpp mpc `#Spotify`
 searx \
 zeronet \
 #hget-git `#Better wget` \
