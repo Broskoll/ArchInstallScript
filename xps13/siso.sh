@@ -11,7 +11,7 @@ sudo pacman -Syu
 echo -e "\n Install packages"
 echo -e "Pacman"
 sudo pacman -S `#comment` \
-xf86-video-intel mesa \
+xf86-video-intel mesa `#Core` \
 xorg-server xorg-server-utils xorg-xinit \
 linux-zen linux-zen-headers `#Kernel` \
 xf86-input-synaptics xf86-input-libinput \
@@ -41,19 +41,16 @@ unclutter `#Hide the mouse` \
 xsel `#Copy` \
 ruby \
 npm \
-powertop acpi \
-tlp \
+powertop acpi tlp `#Battery` \
 rofi \
-zsh \
-zsh-completions
 
 echo -e "Yaourt"
 yaourt -S \
-i3-gaps-git \
-broadcom-wl-dkms \
-concalc \
-lemonbar-xft-git \
-hsetroot \
+i3-gaps-git `#i3` \
+broadcom-wl-dkms `#Wifi` \
+concalc `#CLI calculator` \
+lemonbar-xft-git `#Bar` \
+hsetroot `#Wallpaper` \
 searx \
 zeronet \
 #hget-git `#Better wget` \
@@ -61,7 +58,6 @@ kpcli `#Keepass` \
 addic7ed-cli `#Subtitles`\
 rtv \
 plymouth \
-oh-my-zsh-git \
 rdcli
 
 #echo -e "Npm"
