@@ -18,7 +18,7 @@ xf86-input-synaptics xf86-input-libinput \
 termite `#Terminal` \
 neovim \
 firefox \
-alsa-utils pusleaudio pulseaudio-alsa `#Sound` \
+alsa-utils alsa-lib pusleaudio pulseaudio-alsa `#Sound` \
 dunst `#Notification` \
 udiskie `#Automount` \
 i3lock `#Lockscreen` \
