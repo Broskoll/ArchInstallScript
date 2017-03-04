@@ -15,12 +15,12 @@ xf86-video-intel mesa \
 xorg-server xorg-server-utils xorg-xinit \
 linux-zen linux-zen-headers `#Kernel` \
 xf86-input-synaptics xf86-input-libinput \
-termite \
+termite `#Terminal` \
 neovim \
 firefox \
-alsa-utils \
-dunst \
-udiskie \
+alsa-utils pusleaudio pulseaudio-alsa `#Sound` \
+dunst `#Notification` \
+udiskie `#Automount` \
 i3lock `#Lockscreen` \
 python python2 python-pip python2-pip `#Python` \
 android-tools `#ADB` \
