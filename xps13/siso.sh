@@ -25,7 +25,7 @@ i3lock `#Lockscreen` \
 python python2 python-pip python2-pip `#Python` \
 android-tools `#ADB` \
 mpv `#VLC` \
-ranger `#File manager` \
+ranger w3m `#File manager` \
 slim archlinux-themes-slim `#Login` \
 feh `#Image viewer` \
 zip unzip unrar `#Compression` \
