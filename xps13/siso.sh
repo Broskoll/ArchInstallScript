@@ -127,6 +127,7 @@ amixer -c 1 set SPO on
 #    slave.pcm "dmix"
 #}
 
-
-ACTION=="add",    ENV{XAUTHORITY}="/home/gawk/.Xauthority", ENV{NAME}=="*?", ENV{DISPLAY}=":0.0", ENV{ID_INPUT_KEYBOARD}=="1", RUN+="/home/gawk/.bin/kbup", TEST=="power/control", ATTR{power/control}="on"
-ACTION=="remove", ENV{XAUTHORITY}="/home/gawk/.Xauthority", ENV{NAME}=="*?", ENV{DISPLAY}=":0.0", ENV{ID_INPUT_KEYBOARD}=="1", RUN+="/home/gawk/.bin/kbdwn"
+sudo touch /etc/udev/rules.d/91-local.rules
+#Add these to the file
+#ACTION=="add",    ENV{XAUTHORITY}="/home/gawk/.Xauthority", ENV{NAME}=="*?", ENV{DISPLAY}=":0.0", ENV{ID_INPUT_KEYBOARD}=="1", RUN+="/home/gawk/.bin/kbup", TEST=="power/control", ATTR{power/control}="on"
+#ACTION=="remove", ENV{XAUTHORITY}="/home/gawk/.Xauthority", ENV{NAME}=="*?", ENV{DISPLAY}=":0.0", ENV{ID_INPUT_KEYBOARD}=="1", RUN+="/home/gawk/.bin/kbdwn"
