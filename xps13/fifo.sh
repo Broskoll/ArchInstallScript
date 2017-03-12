@@ -1,7 +1,7 @@
 #!/bin/bash
 #wget -O fifo.sh goo.gl/jc50dL && bash fifo.sh
 
-echo -e "\nArch Linux a VM"
+echo -e "\nArch Linux - XPS 13"
 
 echo -e "\nDevices"
 lsblk
