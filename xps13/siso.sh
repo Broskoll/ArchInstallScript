@@ -43,7 +43,7 @@ ruby \
 npm \
 powertop acpi tlp `#Battery` \
 rofi `#Launcher` \
-jdk8-openjdk `#Java`
+jdk8-openjdk java-openjfx `#Java`
 
 echo -e "Yaourt"
 yaourt -S \
