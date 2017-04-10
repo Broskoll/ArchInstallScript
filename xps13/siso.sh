@@ -19,7 +19,7 @@ termite `#Terminal` \
 neovim \
 firefox \
 alsa-utils alsa-lib pusleaudio pulseaudio-alsa `#Sound` \
-dunst `#Notification` \
+dunst `#Notification server` \
 udiskie `#Automount` \
 i3lock `#Lockscreen` \
 python python2 python-pip python2-pip `#Python` \
@@ -50,6 +50,7 @@ yaourt -S \
 i3-gaps-git `#i3` \
 broadcom-wl-dkms `#Wifi` \
 concalc `#CLI calculator` \
+libnotify-id `#Notifications` \
 lemonbar-xft-git `#Bar` \
 hsetroot `#Wallpaper` \
 mopidy mopidy-spotify ncmpcpp mpc `#Spotify`
