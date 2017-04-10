@@ -42,7 +42,8 @@ xsel `#Copy` \
 ruby \
 npm \
 powertop acpi tlp `#Battery` \
-rofi \
+rofi `#Launcher` \
+jdk8-openjdk `#Java`
 
 echo -e "Yaourt"
 yaourt -S \
