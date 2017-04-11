@@ -13,11 +13,11 @@ echo -e "Pacman"
 sudo pacman -S `#comment` \
 xf86-video-intel mesa `#Core` \
 xorg-server xorg-server-utils xorg-xinit \
-linux-zen linux-zen-headers `#Kernel` \
+`linux-zen linux-zen-headers \`#Kernel\`` \
 xf86-input-synaptics xf86-input-libinput \
 termite `#Terminal` \
-neovim \
-firefox \
+neovim `#Text editor` \
+firefox `#Browser` \
 alsa-utils alsa-lib pusleaudio pulseaudio-alsa `#Sound` \
 dunst `#Notification server` \
 udiskie `#Automount` \
