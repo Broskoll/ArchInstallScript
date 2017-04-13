@@ -54,6 +54,7 @@ concalc `#CLI calculator` \
 libnotify-id `#Notifications` \
 lemonbar-xft-git `#Bar` \
 hsetroot `#Wallpaper` \
+tmux-bash-completion `#Tmux tab completion` \
 mopidy mopidy-spotify ncmpcpp mpc `#Spotify`
 zeronet \
 #hget-git `#Better wget` \
