@@ -118,7 +118,7 @@ sudo echo "options snd_hda_intel index=1,0" >> /etc/modprobe.d/alsa-base.conf
 #Slim
 #take the config /etc/slim.conf
 sudo systemctl enable slim.service
-#take the minimal folder
+#take the minimal folder /usr/share/slim/themes/minimal
 
 #Sound
 sudo echo "options snd_hda_intel index=1,0" > /etc/modprobe.d/alsa-base.conf
