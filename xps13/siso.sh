@@ -142,4 +142,4 @@ sudo echo "blacklist btusb" >> /etc/modprobe.d/blacklist.conf
 
 sudo systemctl enable tlp.service 
 sudo systemctl enable tlp-sleep.service
-
+sudo systemctl disable systemd-rfkill.service
