@@ -140,17 +140,6 @@ sudo touch /etc/udev/rules.d/91-local.rules
 sudo echo "blacklist btusb" >> /etc/modprobe.d/blacklist.conf
 #To enable : sudo modprobe btusb
 
-sudo echo "[Unit]" >> /etc/systemd/system/powertop.service
-sudo echo "Description=Powertop tunings" >> /etc/systemd/system/powertop.service
-sudo echo "" >> /etc/systemd/system/powertop.service
-sudo echo "[Service]" >> /etc/systemd/system/powertop.service
-sudo echo "Type=oneshot" >> /etc/systemd/system/powertop.service
-sudo echo "ExecStart=/usr/bin/powertop --auto-tune" >> /etc/systemd/system/powertop.service
-sudo echo "" >> /etc/systemd/system/powertop.service
-sudo echo "[Install]" >> /etc/systemd/system/powertop.service
-sudo echo "WantedBy=multi-user.target" >> /etc/systemd/system/powertop.service
-sudo systemctl enable powertop.service
-
 sudo systemctl enable tlp.service 
 sudo systemctl enable tlp-sleep.service
 
