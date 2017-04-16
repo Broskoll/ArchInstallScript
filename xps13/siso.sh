@@ -41,7 +41,7 @@ ntfs-3g \
 unclutter `#Hide the mouse` \
 xsel `#Copy` \
 ruby \
-npm \
+npm `#Magnet dependencie` \
 powertop acpi tlp `#Battery` \
 rofi `#Launcher` \
 jdk8-openjdk java-openjfx `#Java` \
