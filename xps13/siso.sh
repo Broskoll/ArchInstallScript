@@ -63,7 +63,8 @@ zeronet \
 #hget-git `#Better wget` \
 kpcli `#Keepass` \
 addic7ed-cli `#Subtitles`\
-rtv \
+neomutt `#Mail` \
+rtv `#Reddit` \
 rdcli
 
 #echo -e "Npm"
