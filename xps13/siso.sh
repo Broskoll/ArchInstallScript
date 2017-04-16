@@ -44,7 +44,10 @@ ruby \
 npm \
 powertop acpi tlp `#Battery` \
 rofi `#Launcher` \
-jdk8-openjdk java-openjfx `#Java`
+jdk8-openjdk java-openjfx `#Java` \
+libreoffice-fresh \
+gimp \ 
+youtube-dl `#Rtv dependencie`
 
 echo -e "Yaourt"
 yaourt -S \
