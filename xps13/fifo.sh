@@ -108,7 +108,7 @@ arch-chroot /mnt echo -e "title Arch Linux" >> /mnt/boot/loader/entries/arch.con
 arch-chroot /mnt echo -e "linux /vmlinuz-linux" >> /mnt/boot/loader/entries/arch.conf
 arch-chroot /mnt echo -e "initrd /intel-ucode.img" >> /mnt/boot/loader/entries/arch.conf
 arch-chroot /mnt echo -e "initrd /initramfs-linux.img" >> /mnt/boot/loader/entries/arch.conf
-arch-chroot /mnt echo -e "options root=/dev/$sd3 rw" >> /mnt/boot/loader/entries/arch.conf
+arch-chroot /mnt echo -e "options root=/dev/$sd3 pcie_aspm=force rw" >> /mnt/boot/loader/entries/arch.conf
 
 read -p "Press enter to reboot"
 umount -R /mnt
