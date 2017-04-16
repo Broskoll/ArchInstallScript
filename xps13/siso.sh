@@ -47,6 +47,7 @@ rofi `#Launcher` \
 jdk8-openjdk java-openjfx `#Java` \
 libreoffice-fresh \
 gimp \ 
+mutt `#Mail` \
 youtube-dl `#Rtv dependencie`
 
 echo -e "Yaourt"
@@ -63,7 +64,6 @@ zeronet \
 #hget-git `#Better wget` \
 kpcli `#Keepass` \
 addic7ed-cli `#Subtitles`\
-neomutt `#Mail` \
 rtv `#Reddit` \
 rdcli
 
