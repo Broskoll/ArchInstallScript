@@ -65,6 +65,7 @@ zeronet \
 kpcli `#Keepass` \
 addic7ed-cli `#Subtitles`\
 rtv `#Reddit` \
+aseprite `#Pixel-art` \
 rdcli
 
 #echo -e "Npm"
