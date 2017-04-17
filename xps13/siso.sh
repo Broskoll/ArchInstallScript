@@ -48,7 +48,9 @@ jdk8-openjdk java-openjfx `#Java` \
 libreoffice-fresh \
 gimp \ 
 mutt `#Mail` \
-youtube-dl `#Rtv dependencie`
+youtube-dl `#Rtv dependencie` \
+newsbeuter `#Rss` \
+openvpn
 
 echo -e "Yaourt"
 yaourt -S \
