@@ -141,7 +141,8 @@ sudo touch /etc/udev/rules.d/91-local.rules
 #ACTION=="add",    ENV{XAUTHORITY}="/home/gawk/.Xauthority", ENV{NAME}=="*?", ENV{DISPLAY}=":0.0", ENV{ID_INPUT_KEYBOARD}=="1", RUN+="/home/gawk/.bin/kb/kbup", TEST=="power/control", ATTR{power/control}="on"
 #ACTION=="remove", ENV{XAUTHORITY}="/home/gawk/.Xauthority", ENV{NAME}=="*?", ENV{DISPLAY}=":0.0", ENV{ID_INPUT_KEYBOARD}=="1", RUN+="/home/gawk/.bin/kb/kbdwn"
 
-sudo echo "blacklist btusb" >> /etc/modprobe.d/blacklist.conf
+echo 'blacklist btusb' | sudo tee --append /etc/modprobe.d/blacklist.conf
+echo 'blacklist uvcvideo' | sudo tee --append /etc/modprobe.d/blacklist.conf
 #To enable : sudo modprobe btusb
 
 sudo systemctl enable tlp.service 
