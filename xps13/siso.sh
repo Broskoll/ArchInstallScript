@@ -37,7 +37,7 @@ scrot `#Screenshots` \
 openssh `#SSH` \
 rsync `#Sync files` \
 exfat-utils `#Mount exfat`
-ntfs-3g \
+ntfs-3g `#Read and write ntfs` \
 unclutter `#Hide the mouse` \
 xsel `#Copy` \
 ruby \
@@ -45,12 +45,12 @@ npm `#Magnet dependencie` \
 powertop acpi tlp `#Battery` \
 rofi `#Launcher` \
 jdk8-openjdk java-openjfx `#Java` \
-libreoffice-fresh \
-gimp \ 
+libreoffice-fresh `#Word processor` \
+gimp `#Graphical editor` \ 
 mutt `#Mail` \
 youtube-dl `#Rtv dependencie` \
 newsbeuter `#Rss` \
-openvpn
+openvpn `#Vpn`
 
 echo -e "Yaourt"
 yaourt -S \
@@ -62,13 +62,13 @@ lemonbar-xft-git `#Bar` \
 hsetroot `#Wallpaper` \
 tmux-bash-completion `#Tmux tab completion` \
 mopidy mopidy-spotify ncmpcpp mpc `#Spotify` \
-zeronet \
+zeronet `#Decentralize internet` \
 #hget-git `#Better wget` \
 kpcli `#Keepass` \
-addic7ed-cli `#Subtitles`\
+addic7ed-cli `#Subtitles` \
 rtv `#Reddit` \
 aseprite `#Pixel-art` \
-rdcli
+rdcli `#Real-debrid`
 
 #echo -e "Npm"
 #sudo npm install -g minimist request cheerio \
