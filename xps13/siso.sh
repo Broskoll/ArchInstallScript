@@ -50,7 +50,8 @@ gimp `#Graphical editor` \
 mutt `#Mail` \
 youtube-dl `#Rtv dependencie` \
 newsbeuter `#Rss` \
-openvpn `#Vpn`
+openvpn `#Vpn` \
+intellij-idea-community-edition `#Java IDE`
 
 echo -e "Yaourt"
 yaourt -S \
