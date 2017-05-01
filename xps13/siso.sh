@@ -51,7 +51,8 @@ mutt `#Mail` \
 youtube-dl `#Rtv dependencie` \
 newsbeuter `#Rss` \
 openvpn `#Vpn` \
-intellij-idea-community-edition `#Java IDE`
+intellij-idea-community-edition `#Java IDE` \
+gtk-engine-murrine `#Gtk`
 
 echo -e "Yaourt"
 yaourt -S \
@@ -69,7 +70,8 @@ kpcli `#Keepass` \
 addic7ed-cli `#Subtitles` \
 rtv `#Reddit` \
 aseprite `#Pixel-art` \
-rdcli `#Real-debrid`
+rdcli `#Real-debrid` \
+adwaita-compact-gtk-theme `#Gtk`
 
 #echo -e "Npm"
 #sudo npm install -g minimist request cheerio \
