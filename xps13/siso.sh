@@ -71,7 +71,9 @@ addic7ed-cli `#Subtitles` \
 rtv `#Reddit` \
 aseprite `#Pixel-art` \
 rdcli `#Real-debrid` \
-adwaita-compact-gtk-theme `#Gtk`
+adwaita-compact-gtk-theme `#Gtk` \
+torrentflix \
+mullvad
 
 #echo -e "Npm"
 #sudo npm install -g minimist request cheerio \
