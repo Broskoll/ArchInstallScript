@@ -87,6 +87,9 @@ sudo systemctl start sshd.service
 echo -e "\n Enabling Zeronet"
 sudo systemctl enable zeronet
 
+echo -e "\n Enabling Searx"
+sudo systemctl enable searx
+
 sudo echo "Section \"InputClass\"" >> /etc/X11/xorg.conf.d/50-libinput.conf
 sudo echo "	Identifier \"touchpad\"" >> /etc/X11/xorg.conf.d/50-libinput.conf
 sudo echo "	MatchProduct \"DLL0665:01 06CB:76AD Touchpad\"" >> /etc/X11/xorg.conf.d/50-libinput.conf
