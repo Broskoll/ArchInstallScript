@@ -83,7 +83,7 @@ echo -e "\n Enabling Ssh"
 sudo systemctl enable sshd.service
 sudo systemctl start sshd.service
 
-echo -e "\n Enabling Zeronet
+echo -e "\n Enabling Zeronet"
 sudo systemctl enable zeronet
 
 sudo echo "Section \"InputClass\"" >> /etc/X11/xorg.conf.d/50-libinput.conf
