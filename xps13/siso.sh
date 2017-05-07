@@ -16,6 +16,7 @@ xorg-server xorg-server-utils xorg-xinit \
 #`linux-zen linux-zen-headers \`#Kernel\`` \
 xf86-input-synaptics xf86-input-libinput `#Touchpad` \
 termite `#Terminal` \
+tor \
 tmux `#Terminal multiplexer` \
 neovim `#Text editor` \
 firefox `#Browser` \
