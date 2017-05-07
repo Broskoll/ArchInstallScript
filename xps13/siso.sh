@@ -68,6 +68,7 @@ mopidy mopidy-spotify ncmpcpp mpc `#Spotify` \
 zeronet-git `#Decentralize internet` \
 #hget-git `#Better wget` \
 kpcli `#Keepass` \
+searx-git `#Searx server`
 addic7ed-cli `#Subtitles` \
 rtv `#Reddit` \
 aseprite `#Pixel-art` \
