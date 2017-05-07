@@ -64,7 +64,7 @@ lemonbar-xft-git `#Bar` \
 hsetroot `#Wallpaper` \
 tmux-bash-completion `#Tmux tab completion` \
 mopidy mopidy-spotify ncmpcpp mpc `#Spotify` \
-zeronet `#Decentralize internet` \
+zeronet-git `#Decentralize internet` \
 #hget-git `#Better wget` \
 kpcli `#Keepass` \
 addic7ed-cli `#Subtitles` \
