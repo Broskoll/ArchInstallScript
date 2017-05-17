@@ -17,7 +17,7 @@ xorg-server xorg-server-utils xorg-xinit \
 xf86-input-synaptics xf86-input-libinput `#Touchpad` \
 termite `#Terminal` \
 #tor \
-transmission-cli `#Torrent cli` \
+rtorrent `#Torrent cli` \
 tmux `#Terminal multiplexer` \
 neovim `#Text editor` \
 firefox `#Browser` \
@@ -75,7 +75,7 @@ rtv `#Reddit` \
 aseprite `#Pixel-art` \
 rdcli `#Real-debrid` \
 adwaita-compact-gtk-theme `#Gtk` \
-torrentflix \
+torrentflix peerflix \
 mullvad
 
 #echo -e "Npm"
